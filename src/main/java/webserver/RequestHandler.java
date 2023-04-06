@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class RequestHandler implements Runnable{
     Socket connection;
     private static final Logger log = Logger.getLogger(RequestHandler.class.getName());
-
+    private static final String ROOT_URL = "./webapp";
     public RequestHandler(Socket connection) {
         this.connection = connection;
     }
